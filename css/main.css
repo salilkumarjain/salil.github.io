@@ -4,7 +4,7 @@
 
 /************************************ FONTS ************************************/
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
-@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
+@import url(https://cors-anywhere.herokuapp.com/http://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
