@@ -145,7 +145,11 @@
     	  // request = new ActiveXObject('Msxml2.XMLHTTP');
        }
        
-       request.open('POST', url, !synchronous);
+	   var mthd = 'POST';
+	   if(document.location.href.indexOf('github')>0){
+		mthd='GET';//additional handling for GITHUB as it does not support POST requests.
+	   }
+	   request.open(mthd, url, !synchronous);
        request.responseType = "arraybuffer";
        //request.responseType = "blob";
        //request.overrideMimeType("application/x-binary");
